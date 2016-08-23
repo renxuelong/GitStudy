@@ -1,0 +1,30 @@
+mkdir test
+cd test
+touch a.md
+
+git init 初始化仓库
+git status 查看状态
+git add file
+git rm --cache file  移除缓存
+git commit -m "info" 提交  -m 提交信息
+git log  查看所有产生的commit记录
+git branch 查看当前分支情况
+git branch a 新建一个名字叫 a 的分支,分支 a 跟分支 master 内容一样
+git checkout a 切换分支
+git checkout -b a 新建一个a分支，并且自动切换到a分支
+git merge a  将a分支的代码合并过来（需要先checkout master切换到主分支）
+git branch -d b 删除分支b，前提是a分支中的代码已经merge到了master分支，否则会删除失败
+git branch -D b 强制删除b分支
+git tag v1.0 新建代码版本标签
+git tag 查看版本标签
+git checkout v1.0 切换到某个标签
+
+
+github  
+1. 配置ssh  ssh-keygen -t rsa 生成密钥 id_rsa id_rsa.pub 将id_rsa.pub配置到github
+2. 配置用户名 git config --global user.name ""
+   配置邮箱   git config --global user.email ""
+3. 
+3. git push origin master 推到远程master分支
+4. git pull origin master 将master分支上的代码同步到本地
+
