@@ -18,13 +18,15 @@ git branch -D b 强制删除b分支
 git tag v1.0 新建代码版本标签
 git tag 查看版本标签
 git checkout v1.0 切换到某个标签
-
+git remote -v 查看当前项目有哪些远程仓库
 
 github  
 1. 配置ssh  ssh-keygen -t rsa 生成密钥 id_rsa id_rsa.pub 将id_rsa.pub配置到github
 2. 配置用户名 git config --global user.name ""
    配置邮箱   git config --global user.email ""
-3. 
-3. git push origin master 推到远程master分支
-4. git pull origin master 将master分支上的代码同步到本地
+3. git remote add origin git@github.com:renxuelong/GitStudy.git
+   将本地的代码添加一个远程仓库，origin是这个远程仓库的名字，可以随便起
+   一个项目可以由多个远程仓库，提交到不同的仓库就需要不用的仓库名
+3. git push origin master 推到远程仓库origin的master分支
+4. git pull origin master 将origin远程仓库master分支上的代码同步到本地
 
