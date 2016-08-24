@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # GitStudy
 ## git的学习记录
 mkdir test
