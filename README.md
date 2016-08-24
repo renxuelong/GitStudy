@@ -1,4 +1,8 @@
-**mkdir test**
+<<<<<<< HEAD
+=======
+# GitStudy
+## git的学习记录
+mkdir test
 cd test
 touch a.md
 
