@@ -60,6 +60,48 @@ git remote rm origin 移除远程仓库
 ## alias 设置别名
 git config --global alias.co checkout
 
-git config --global alias.psm 'push origin master'
+git config --global alias.psm 'push -u origin master'
+
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" 格式化log日志
+
+git config --global core.editor "vim" 设置Editor使用vim
+
+git config --global color.ui true 开启Git输出着色
+
+git config --global core.quotepath false 设置显示中文文件名
+
+git config -l 查看自己的配置
+
+
+## diff
+git diff 查看改动 红色代表删除的，绿色代表增加的，git diff 只能查看没有添加到缓存区的差异，就是没有git add的文件
+
+git diff <$id1> <$id2> 比较两次提交之间的差异
+
+
+## checkout
+git checkout develop 切换分支
+
+git checkout v1.0  切换tag，切换到某次commit
+
+git checkout ffddllllll  commit_id,每次commit的SHA1值
+
+
+git checkout a.md  撤销没有添加到缓存区的改动，没有git add的变动
+
+## stash
+git stash 将没有commit的代码暂存，add了也沒关系,git status会看不到任何改动
+
+git stash list 查看暂存区的记录
+
+git stash apply 将暂存的代码还原
+
+git stash drop 将最近的一条stash记录删除
+
+git stash pop 跟 apply 功能一样，区别是 pop 不但会将代码还原，还自动删除该条 stash 记录，省去 drop 一次的操作
+
+git stash clear 清空所有暂存区记录，drop只删除一条，后面跟可以跟stash_id参数来删除指定的某条记录，不跟参数就是删除最近的，clear是清空
+
+
 
 
