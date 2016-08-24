@@ -102,6 +102,23 @@ git stash pop 跟 apply 功能一样，区别是 pop 不但会将代码还原，
 
 git stash clear 清空所有暂存区记录，drop只删除一条，后面跟可以跟stash_id参数来删除指定的某条记录，不跟参数就是删除最近的，clear是清空
 
+## merge & rebase
+**merge 合并**
 
+git checkout master
 
+git merge featureA 将 featureA 分支上的代码合并到master分支上
 
+**rebase 合并**
+
+git checkout master
+git rebase featureA 将featureA分支上的代码合并到master分支上
+ 
+merge 和 rebase 的区别在于，merge直接将featureA的代码放到另一空间
+
+rebase则是将两个分支上的代码先进行比较，按时间重新排序，然后放置，优点是合并后代码很有逻辑，缺点是不知道哪些代码来自哪个分支
+
+## 冲突解决
+**conflicts** 冲突
+
+冲突的地方有=======分出上下两部分，上部分一个有HEAD的字样代表是我当前所在的分支的代码，下半部分是要合并到的分支的代码，比较后，删除了老旧代码，同时删除 <<< HEAD ========这些标记符号，再进行一次commit就可以了
