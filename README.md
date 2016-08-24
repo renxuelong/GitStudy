@@ -53,4 +53,4 @@ git remote rm origin 移除远程仓库
 3. git push origin master 推到远程仓库origin的master分支
 
 4. git pull origin master 将origin远程仓库master分支上的代码同步到本地
-
+5. 
