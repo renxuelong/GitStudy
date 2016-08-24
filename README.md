@@ -40,6 +40,8 @@ git checkout v1.0 切换到某个标签
 
 git remote -v 查看当前项目有哪些远程仓库
 
+git remote rm origin 移除远程仓库
+
 ## github  
 
 1. 配置ssh  ssh-keygen -t rsa 生成密钥 id_rsa id_rsa.pub 将id_rsa.pub配置到github
