@@ -8,7 +8,9 @@ git init 初始化仓库
 
 git status 查看状态
 
-git add file
+git add file 添加文件
+
+git rm file 移除文件
 
 git rm --cache file  移除缓存
 
@@ -44,8 +46,9 @@ git remote rm origin 移除远程仓库
 
 1. 配置ssh  ssh-keygen -t rsa 生成密钥 id_rsa id_rsa.pub 将id_rsa.pub配置到github
 
-2. 配置用户名 git config --global user.name ""
-   配置邮箱   git config --global user.email ""
+2. - 配置用户名 git config --global user.name ""
+   - 配置邮箱   git config --global user.email ""
+   - 可以再随便一个项目中执行以上代码擦除全局配置的个人信息
 3. git remote add origin git@github.com:renxuelong/GitStudy.git
    将本地的代码添加一个远程仓库，origin是这个远程仓库的名字，可以随便起
    一个项目可以由多个远程仓库，提交到不同的仓库就需要不用的仓库名
@@ -53,4 +56,10 @@ git remote rm origin 移除远程仓库
 3. git push origin master 推到远程仓库origin的master分支
 
 4. git pull origin master 将origin远程仓库master分支上的代码同步到本地
-5. 
+
+## alias 设置别名
+git config --global alias.co checkout
+
+git config --global alias.psm 'push origin master'
+
+
