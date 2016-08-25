@@ -135,5 +135,5 @@ git branch 查看本地分支
 git branch ir 查看远程分支
 git branch -d develop 删除本地分支  
 git branch -D develop (强制删除)  
-git push origin:develop 删除远程分支  
+git push origin :develop 删除远程分支  
 
