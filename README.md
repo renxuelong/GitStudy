@@ -125,3 +125,15 @@ rebase则是将两个分支上的代码先进行比较，按时间重新排序�
 **conflicts** 冲突
 
 冲突的地方有=======分出上下两部分，上部分一个有HEAD的字样代表是我当前所在的分支的代码，下半部分是要合并到的分支的代码，比较后，删除了老旧代码，同时删除 <<< HEAD ========这些标记符号，再进行一次commit就可以了
+
+## brach 分支
+
+git brach develop 在当前分支基础上新建分支，内容同当前分支一样  
+git checkout develop 切换分支  
+git push origin develop：develop2 将远程分支取名为develop2，不建议本地跟远程分支名不同，建议本地分支跟远程分支名要保持一致  
+git branch 查看本地分支  
+git branch ir 查看远程分支
+git branch -d develop 删除本地分支  
+git branch -D develop (强制删除)  
+git push origin:develop 删除远程分支  
+
