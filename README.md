@@ -68,7 +68,7 @@ git config --global core.editor "vim" 设置Editor使用vim
 
 git config --global color.ui true 开启Git输出着色
 
-git config --global core.quotepath false 设置显示中文文件名
+git config --global core.quotepath false 设置显示中文文件名，false为显示中文名
 
 git config -l 查看自己的配置
 
@@ -77,6 +77,9 @@ git config -l 查看自己的配置
 git diff 查看改动 红色代表删除的，绿色代表增加的，git diff 只能查看没有添加到缓存区的差异，就是没有git add的文件
 
 git diff <$id1> <$id2> 比较两次提交之间的差异
+git diff <$id1> <$id2>   比较两次提交之间的差异
+git diff <branch1>..<branch2> 在两个分支之间比较 
+git diff --staged   比较暂存区和版本库差异
 
 
 ## checkout
