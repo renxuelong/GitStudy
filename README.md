@@ -76,9 +76,9 @@ git config -l 查看自己的配置
 ## diff
 git diff 查看改动 红色代表删除的，绿色代表增加的，git diff 只能查看没有添加到缓存区的差异，就是没有git add的文件
 
-git diff <$id1> <$id2>   比较两次提交之间的差异
+git diff v1.0 v1.1   比较两次提交之间的差异
 
-git diff <branch1\\>..<branch2\\> 在两个分支之间比较 
+git diff master develop 在两个分支之间比较 
 
 git diff --staged   比较暂存区和版本库差异
 
@@ -136,4 +136,5 @@ git branch ir 查看远程分支
 git branch -d develop 删除本地分支  
 git branch -D develop (强制删除)  
 git push origin :develop 删除远程分支  
-
+git checkout develop origin/develop 将远程分支迁到本地，测试无效  
+git checkout -b develop origin/develop 将远程分支迁到本地并切换到该分支  
