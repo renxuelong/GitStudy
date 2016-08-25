@@ -78,10 +78,9 @@ git diff 查看改动 红色代表删除的，绿色代表增加的，git diff �
 
 git diff <$id1> <$id2>   比较两次提交之间的差异
 
-git diff <branch1>..<branch2> 在两个分支之间比较 
+git diff <branch1\>..<branch2\> 在两个分支之间比较 
 
 git diff --staged   比较暂存区和版本库差异
-
 
 ## checkout
 git checkout develop 切换分支
