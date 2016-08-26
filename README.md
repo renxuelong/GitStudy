@@ -138,3 +138,12 @@ git branch -D develop (强制删除)
 git push origin :develop 删除远程分支  
 git checkout develop origin/develop 将远程分支迁到本地，测试无效  
 git checkout -b develop origin/develop 将远程分支迁到本地并切换到该分支  
+
+## Git Flow
+**git flow"**是一种比较成熟的分支管理流程  
+
+- **master**：永远处于即将发布（production-ready）状态
+- **deveplop**：最新的开发状态
+- **feature**：开发新功能的分支，基于deveplop，完成后merge回develop
+- **release**:准备要发布的版本，用来修复bug，基于develop，完成后merge回develop和master
+- **hotfix**：修复master上的问题，等不及release版本就必须马上上线，基于master，完成后merge回master和develop
