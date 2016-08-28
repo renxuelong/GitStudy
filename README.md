@@ -158,4 +158,8 @@ git checkout -b develop origin/develop 将远程分支迁到本地并切换到�
 
 
 ## Git Flow 管理开发流程
-git flow init 初始化 git-flow 功能
+git flow init 初始化 git-flow 功能，默认设置，完成后当前分支就变成了develop，然和开发都必须从develop开始  
+git flow feature start some_awesome_feature 创建名为 some_awesome_feature 的分支  
+git flow feature finish some_awesome_feature 该命令回把 feature/some_awesome_feature 合并到 develop 分支，然后删除feature分支，必须将改变commit后才可以使用该命令
+
+
