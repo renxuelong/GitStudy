@@ -155,3 +155,7 @@ git checkout -b develop origin/develop 将远程分支迁到本地并切换到�
 **master** --> **hotfix** --> **develop&master**
 
 **master** --> **release** --> **develop&master**
+
+
+## Git Flow 管理开发流程
+git flow init 初始化 git-flow 功能
