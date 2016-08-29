@@ -8,11 +8,16 @@ git init 初始化仓库
 
 git status 查看状态
 
-git add file 添加文件
+git add file 添加文件进入git版本控制
 
-git rm file 移除文件
+git rm --cache file  移除版本控制
 
-git rm --cache file  移除缓存
+git rm file 工作目录中删除文件
+
+git checkout file 未add的时候丢弃改动
+
+git reset file add之后撤销add  
+git reset HEAD file add之后撤销add
 
 git commit -m "info" 提交  -m 提交信息
 
