@@ -170,4 +170,7 @@ git checkout -b develop origin/develop 将远程分支迁到本地并切换到�
 **git flow feature finish some_awesome_feature** 该命令会把 feature/some_awesome_feature 合并到 develop 分支，然后删除feature分支，必须将改变commit后才可以使用该命令，该命令也会将publish到远程的feature删除  
 
  
-git flow release start v0.1.0 需要发布新版本时，基于develop创建一个发布分支，然后升级版本号，修改bug。在完成（finish）一个发布版本时，它会把所做的修改合并到 master 分支，同时合并回 develop 分支。
+**git flow release start v0.1.0** 需要发布新版本时，基于develop创建一个发布分支，然后升级版本号，修改bug。  
+**git flow release publish v0.1.0** Publish一个release
+**git flow release finish v0.1.0** 在完成（finish）一个发布版本时，它会把所做的修改合并到 master 分支，同时合并回 develop 分支。  
+**git tag VERSION** finish一个发布版本时，应该git tag一个版本号
