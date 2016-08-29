@@ -174,3 +174,7 @@ git checkout -b develop origin/develop 将远程分支迁到本地并切换到�
 **git flow release publish v0.1.0** Publish一个release，但是并没有pull的方法  
 **git flow release finish v0.1.0** 在完成（finish）一个发布版本时，它会把所做的修改合并到 master 分支，同时合并会 develop 分支。  
 **git push --tags** finish一个发布版本后，应该git push版本号，不用git tag，git push --tags 会将当前release的版本号作为tag提交
+
+
+**git flow hotfix start 0.0.1** 开始一个 Hotfix  
+**git flow hotfix finish 0.1.1** 发布一个 Hotfix  
