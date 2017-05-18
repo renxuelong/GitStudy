@@ -1,8 +1,8 @@
 # GitStudy
 ## git的学习记录
-mkdir test
-cd test
-touch a.md
+mkdir test  
+cd test  
+touch a.md  
 
 git init 初始化仓库
 
