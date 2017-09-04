@@ -1,7 +1,7 @@
 # Git 命令
 
-mkdir test  
-cd test  
+mkdir test    
+cd test    
 touch a.md  
 
 
